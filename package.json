@@ -1,0 +1,22 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "automation repo for app X",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sanity": " echo 'running sanity tests'",
+    "smoke": " echo 'running smoke tests'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.2.0",
+    "help": "^3.0.2"
+  },
+  "devDependencies": {
+    "cypress": "^13.3.2",
+    "cypress-xpath": "2.0.1"
+  }
+}
