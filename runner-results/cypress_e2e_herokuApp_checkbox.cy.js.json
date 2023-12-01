@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-12-01T14:26:33.887Z",
+  "duration": 15267,
+  "file": "cypress/e2e/herokuApp/checkbox.cy.js"
+}

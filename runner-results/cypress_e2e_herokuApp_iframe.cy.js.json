@@ -1,0 +1,10 @@
+{
+  "suites": 1,
+  "tests": 1,
+  "passes": 1,
+  "pending": 0,
+  "failures": 0,
+  "start": "2023-12-01T14:27:31.429Z",
+  "duration": 16244,
+  "file": "cypress/e2e/herokuApp/iframe.cy.js"
+}

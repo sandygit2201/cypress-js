@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "session": "npx cypress run --spec cypress/e2e/session/*.cy.js -b chrome",
+    "heroku": "npx cypress run --spec cypress/e2e/herokuApp/*.cy.js",
     "smoke": " echo 'running smoke tests'",
-    "cy:parallel":"cypress-parallel -d cypress/e2e/session -t 2 -s session"
+    "cy:parallel":"cypress-parallel -d cypress/e2e/herokuApp/ -t 3 -s heroku"
   },
   "keywords": [],
   "author": "",

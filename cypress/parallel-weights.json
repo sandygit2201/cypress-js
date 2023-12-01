@@ -1,1 +1,1 @@
-{"cypress/e2e/session/session1.cy.js":{"time":11934,"weight":9},"cypress/e2e/session/session2.cy.js":{"time":14281,"weight":10}}
+{"cypress/e2e/herokuApp/checkbox.cy.js":{"time":15267,"weight":11},"cypress/e2e/herokuApp/dropdown.cy.js":{"time":14602,"weight":10},"cypress/e2e/herokuApp/iframe.cy.js":{"time":16244,"weight":12},"cypress/e2e/herokuApp/js-alerts.cy.js":{"time":12564,"weight":9},"cypress/e2e/herokuApp/upload.cy.js":{"time":11778,"weight":8},"cypress/e2e/herokuApp/xpath-login.cy.js":{"time":10103,"weight":7}}
