@@ -23,3 +23,23 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login',(user,pwd)=>{
+  cy.visit('/')
+  cy.get('input[name="username"]').type(user)
+  cy.get('input[name="password"]').type(pwd)
+  cy.get('button[type="submit"]').click()
+  cy.contains('Dashboard').should('be.visible')
+  
+})
+
+Cypress.Commands.add('loginAndSaveSession', (user, pwd) => {
+    cy.session([user, pwd], () => {
+      cy.visit('/')
+      cy.get('input[name="username"]').type(user)
+      cy.get('input[name="password"]').type(pwd)
+      cy.get('button[type="submit"]').click()
+      cy.contains('Time at Work').should('be.visible')
+    })
+    
+})

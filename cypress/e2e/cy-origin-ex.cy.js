@@ -4,7 +4,7 @@ describe('cy-origin exmaple',()=>{
 
         let userName = Cypress.env("adminUsername");
         let password = Cypress.env("adminPassword");
-        const adminURL = 'www.adminapp.com';
+        const adminURL = 'https://www.adminapp.com';
     
         cy.session([userName, password], () => {
           const userCredentials = {
@@ -15,6 +15,13 @@ describe('cy-origin exmaple',()=>{
           cy.xpath('//div[text()="Sign in with"]/following-sibling::div/img').click(
             { force: true },
           );
+
+          let label = "signinwith"
+          let user = "signinwith"
+          let xpath = `//div[text()="${label}"]/following-sibling::div/img`
+          
+          cy.contains(`Hello ${user}`).should('be.visible')
+
           cy.origin(
             "login.microsoftonline.com",
             { args: userCredentials },

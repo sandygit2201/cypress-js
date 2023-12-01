@@ -17,5 +17,7 @@
 import './commands'
 import 'cypress-xpath'
 import '@faker-js/faker'
+import '@4tw/cypress-drag-drop'
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

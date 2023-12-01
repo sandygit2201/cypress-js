@@ -5,17 +5,23 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "sanity": " echo 'running sanity tests'",
-    "smoke": " echo 'running smoke tests'"
+    "session": "npx cypress run --spec cypress/e2e/session/*.cy.js -b chrome",
+    "smoke": " echo 'running smoke tests'",
+    "cy:parallel":"cypress-parallel -d cypress/e2e/session -t 2 -s session"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@faker-js/faker": "^8.2.0",
-    "help": "^3.0.2"
+    "cypress-parallel": "^0.13.0",
+    "dotenv": "^16.3.1",
+    "help": "^3.0.2",
+    "i": "^0.3.7",
+    "npm": "^10.2.4"
   },
   "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.5",
     "cypress": "^13.3.2",
     "cypress-xpath": "2.0.1"
   }
