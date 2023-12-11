@@ -12,7 +12,7 @@ import withdrawalPage from '../../../support/pages/customer/withdrawal'
 describe('customer flow End to end',()=>{
 
     it('test 1',()=>{
-        cy.visit('/')
+        cy.visit('https://www.way2automation.com/angularjs-protractor/banking/#/login')
         appHomePage.loginAsManager()
         const fName = fakerHelper.getFirstName()
         const lName = fakerHelper.getLastName()

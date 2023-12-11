@@ -1,5 +1,7 @@
 describe('Drag and drop',()=>{
 
+    // Drag and drop is working only for single item
+
     it('Drag and drop test',()=>{
         cy.visit('https://kitchen.applitools.com/ingredients/drag-and-drop')
         cy.wait(3000)

@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-01T14:28:11.729Z",
-  "duration": 11778,
+  "start": "2023-12-02T02:49:41.992Z",
+  "duration": 14892,
   "file": "cypress/e2e/herokuApp/upload.cy.js"
 }

@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-01T14:27:15.060Z",
-  "duration": 14602,
+  "start": "2023-12-02T02:49:01.941Z",
+  "duration": 14194,
   "file": "cypress/e2e/herokuApp/dropdown.cy.js"
 }

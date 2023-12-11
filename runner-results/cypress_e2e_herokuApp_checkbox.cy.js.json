@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-01T14:26:33.887Z",
-  "duration": 15267,
+  "start": "2023-12-02T02:48:42.673Z",
+  "duration": 12934,
   "file": "cypress/e2e/herokuApp/checkbox.cy.js"
 }

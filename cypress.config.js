@@ -1,6 +1,13 @@
+import * as dotenv from "dotenv";
+
 import { defineConfig } from "cypress";
 
+dotenv.config()
+
+// require("dotenv").config({ path: `.env.${process.env.NODE_ENV}` });
 export default defineConfig({
+
+  env:{...process.env},
   e2e: {
     baseUrl:'https://opensource-demo.orangehrmlive.com/',
     watchForFileChanges:false,
@@ -8,7 +15,9 @@ export default defineConfig({
     defaultCommandTimeout:3000,
     failOnStatusCode: false,
     cacheAcrossSpecs: true,
+    video:false,
     headless:false,
+    projectId: "cogvw9",
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on("task", {

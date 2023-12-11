@@ -4,7 +4,7 @@
   "passes": 5,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-01T14:27:53.558Z",
-  "duration": 12564,
+  "start": "2023-12-02T02:49:22.771Z",
+  "duration": 12357,
   "file": "cypress/e2e/herokuApp/js-alerts.cy.js"
 }

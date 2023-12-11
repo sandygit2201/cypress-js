@@ -21,7 +21,7 @@ describe("customer flow End to end", () => {
     };
 
     beforeEach('invoke application',()=>{
-        cy.visit("/");        
+        cy.visit("https://www.way2automation.com/angularjs-protractor/banking/#/login");        
     })
 
     it("create customer", () => {

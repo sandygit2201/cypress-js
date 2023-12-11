@@ -4,7 +4,7 @@
   "passes": 1,
   "pending": 0,
   "failures": 0,
-  "start": "2023-12-01T14:27:57.146Z",
-  "duration": 10103,
+  "start": "2023-12-02T02:50:03.370Z",
+  "duration": 9495,
   "file": "cypress/e2e/herokuApp/xpath-login.cy.js"
 }

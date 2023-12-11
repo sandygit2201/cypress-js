@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "session": "npx cypress run --spec cypress/e2e/session/*.cy.js -b chrome",
-    "heroku": "npx cypress run --spec cypress/e2e/herokuApp/*.cy.js",
-    "smoke": " echo 'running smoke tests'",
-    "cy:parallel":"cypress-parallel -d cypress/e2e/herokuApp/ -t 3 -s heroku"
+    "heroku": "npx cypress run --spec cypress/e2e/herokuApp/*.cy.js --record --key db9a8a56-fc47-45fb-b401-2daba1ea9e1c",
+    "login": "npx cypress run --spec cypress/e2e/login.cy.js -b chrome",
+    "cy:parallel:heroku":"cypress-parallel -d cypress/e2e/herokuApp/ -t 3 -s heroku",
+    "cy:parallel:session":"cypress-parallel -d cypress/e2e/session/ -t 3 -s session"
   },
   "keywords": [],
   "author": "",
